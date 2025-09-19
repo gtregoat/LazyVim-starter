@@ -17,21 +17,8 @@ return {
     providers = {
       openai = {
         endpoint = "https://api.openai.com/v1",
-        model = "gpt-5",
-        timeout = 30000, -- Timeout in milliseconds
-        extra_request_body = {
-          temperature = 0.75,
-          max_tokens = 20480,
-        },
-      },
-      moonshot = {
-        endpoint = "https://api.moonshot.ai/v1",
-        model = "kimi-k2-0711-preview",
-        timeout = 30000, -- Timeout in milliseconds
-        extra_request_body = {
-          temperature = 0.75,
-          max_tokens = 32768,
-        },
+        model = "gpt-4o-mini",
+        -- timeout = 30000, -- Timeout in milliseconds
       },
     },
   },
